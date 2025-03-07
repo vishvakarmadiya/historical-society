@@ -3,7 +3,7 @@
 
 <div class="container">
     <h1>Customer List</h1>
-    <a href="{{ route('customers.create') }}" class="btn btn-sm fw-bold text-white" style="background-color: rgb(236, 105, 31); ">Add Customer</a>
+    <a href="{{ route('customers.create') }}" class="btn btn-sm fw-bold text-white" style="background-color: #FD605D; ">Add Customer</a>
 
     {{-- <a href="{{ route('customers.export') }}" class="btn btn-success">Export Customers</a> --}}
 
@@ -14,7 +14,7 @@
     @endif
     
     <table id="myDataTable" class="table table-responsive align-middle fs-6 gy-5" >
-        <thead style="background-color: rgb(6, 81, 117); color: white; border-bottom: 2px solid #004761;">
+        <thead style="background-color:#4D4FD1; color: white; border-bottom: 2px solid #004761;">
             <tr>
                 <th style="padding: 12px 20px;">Id</th>
                 <th style="padding: 12px 20px;">Name</th>

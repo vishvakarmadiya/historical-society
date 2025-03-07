@@ -65,7 +65,7 @@ background: transparent;
   margin-top: 10px;
 }
 .card-header1 h2{
-  color: #181C32;
+  color: #4D4FD1;
   font-size: 17px;
 }
 .sigh{
@@ -248,7 +248,7 @@ background: transparent;
   margin-top: 3px !important;
 }
 .select2-container--bootstrap5 .select2-selection--single.form-select-solid .select2-selection__rendered{
-  color: #181C32 !important;
+  color: #4D4FD1 !important;
   font-weight: 400 !important;
 }
 .for-cont4{
@@ -290,7 +290,7 @@ height: 36.01px;
 
 /* Gray Color/bs-gray-900 */
 
-background: #181C32;
+background: #4D4FD1;
 border-radius: 5.0028px;
 color: #FFFFFF;
 flex: none;
@@ -342,7 +342,7 @@ padding: 10px;
 }
 .inner-lay span{
   margin-top: 10px;
-  color: #181C32;
+  color: #4D4FD1;
   font-weight: 500;
 }
 .layout11{

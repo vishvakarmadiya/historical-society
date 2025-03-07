@@ -292,7 +292,7 @@
                                 <div class="card-body card-body4 card-si">
 
                                     <table id="kt_datatable_zero_configuration" class="table table-row-bordered gy-5">
-                                        <thead style="background-color: rgb(6, 81, 117); color: white; border-bottom: 2px solid #004761;">
+                                        <thead style="background-color:#4D4FD1; color: white; border-bottom: 2px solid #004761;">
                                             {{-- <tr class="fw-semibold fs-6 text-muted"> --}}
                                              <tr class="text-start fw-bold fs-7 text-uppercase gs-0" style="letter-spacing: 0.05em;">
 

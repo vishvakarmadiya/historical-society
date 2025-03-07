@@ -25,7 +25,7 @@
                 </div>
                 <div class="d-flex align-items-center gap-2 gap-lg-3">
                     @can('event-categories-create')
-                        <a href="{{ route('admin.event-categories.create') }}" class="btn btn-sm fw-bold text-white" style="background-color:rgb(236, 105, 31)">Create New
+                        <a href="{{ route('admin.event-categories.create') }}" class="btn btn-sm fw-bold text-white" style="background-color:#FD605D">Create New
                             Category</a>
 
                            

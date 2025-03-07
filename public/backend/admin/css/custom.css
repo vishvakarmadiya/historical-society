@@ -136,14 +136,14 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #181C32;
+    color: #4D4FD1;
 }
 .um-summary .um-lists .um-value a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    color: #181C32;
+    color: #4D4FD1;
     text-decoration: underline;
 }
 
@@ -379,7 +379,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: #181C32;
+    color: #4D4FD1;
     margin: 0;
 }
 
@@ -419,7 +419,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #181C32;
+    color: #4D4FD1;
     margin: 0 0 10px 0;
 }
 
@@ -745,14 +745,14 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #181C32;
+    color: #4D4FD1;
 }
 .um-summary .um-lists .um-value a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    color: #181C32;
+    color: #4D4FD1;
     text-decoration: underline;
 }
 
@@ -988,7 +988,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: #181C32;
+    color: #4D4FD1;
     margin: 0;
 }
 
@@ -1028,7 +1028,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #181C32;
+    color: #4D4FD1;
     margin: 0 0 10px 0;
 }
 
@@ -1239,7 +1239,7 @@
     font-family: 'Inter';
     font-weight: 400 !important;
     font-size: 15px !important;
-    color: #181C32 !important;
+    color: #4D4FD1 !important;
 }
 .form-cont2{
     position: relative;

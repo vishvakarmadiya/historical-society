@@ -312,7 +312,7 @@
             font-weight: 500;
             font-size: 15px;
             line-height: 18px;
-            color: #181C32;
+            color: #4D4FD1;
         }
 
         .render-column-list .rc-action {

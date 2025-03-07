@@ -36,7 +36,7 @@
                         </div>
                         <div class="menu-item px-5 text-center">
                            
-                            <a class="btn btn-sm fw-bold text-white" style="background-color: rgb(236, 105, 31);" href="{{ route('admin.logout') }}"
+                            <a class="btn btn-sm fw-bold text-white" style="background-color: #FD605D;" href="{{ route('admin.logout') }}"
                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 {{ __('Sign Out') }}
                             </a>

@@ -19645,7 +19645,7 @@ html[data-bs-theme="dark"] li[data-type][data-drag-type="component"] a {
   background: #fff;
 }
 .drag-elements-sidepane ul > li.header label {
-  color: #181C32;
+  color: #4D4FD1;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -19653,7 +19653,7 @@ html[data-bs-theme="dark"] li[data-type][data-drag-type="component"] a {
   padding: 15px 20px 15px 40px;
 }
 .drag-elements-sidepane ul > li.header label > a {
-  color: #181C32;
+  color: #4D4FD1;
   font-size: 14px;
 }
 .drag-elements-sidepane ul > li.header:first-child {
@@ -19927,7 +19927,7 @@ html[data-bs-theme="dark"] li[data-type][data-drag-type="component"] a {
   background-size: 30px 30px;
   background-position: center 8px;
   padding: 31px 0 0 0;
-  color: #181C32;
+  color: #4D4FD1;
   text-align: center;
   font-size: 12px;
   font-style: normal;
@@ -20898,7 +20898,7 @@ audio {
   width: 75px;
   height: 100%;
   padding: 20px;
-  background: #181c32;
+  background: #4D4FD1;
 }
 
 #pagebuilder.preview{
@@ -21108,7 +21108,7 @@ audio {
 #pagebuilder .component-properties label{
   padding: 24px 20px 15px 40px;
   margin: 5px 0 0 0;
-  color: #181C32;
+  color: #4D4FD1;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;

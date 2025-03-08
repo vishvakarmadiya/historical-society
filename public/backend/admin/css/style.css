@@ -4,23 +4,23 @@
     background: #f7f7f7;
 }
 [data-kt-app-layout=dark-sidebar] .app-sidebar {
-    background-color: #4D4FD1;
+    background-color: #00315C;
 }
 
 /* custum css */
 .create_btn{
-    background-color: #F25961 !important;
+    background-color: #AB0635 !important;
 }
 .create_btn:hover{
-    background-color: #F25961 !important;
+    background-color: #AB0635 !important;
 }
 .data_tables{
-    background-color: #4D4FD1 !important;
+    background-color: #00315C !important;
     color: #fff !important;
     text-align: center !important;
 }
 .table_data{
-    color: #4D4FD1 !important;
+    color: #00315C !important;
 }
 
 
@@ -180,14 +180,14 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #4D4FD1;
+    color: #00315C;
 }
 .um-summary .um-lists .um-value a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    color: #4D4FD1;
+    color: #00315C;
     text-decoration: underline;
 }
 
@@ -404,7 +404,7 @@
     background: #FFD3D5;
 }
 .all-activity .ls-activity .ls-status.s-red:before{
-    background: #F25961;
+    background: #AB0635;
 }
 
 .all-activity .ls-activity .left h5{
@@ -423,7 +423,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: #4D4FD1;
+    color: #00315C;
     margin: 0;
 }
 
@@ -463,7 +463,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #4D4FD1;
+    color: #00315C;
     margin: 0 0 10px 0;
 }
 
@@ -657,6 +657,6 @@
     margin-bottom: 10px;
 }
 .custom-hover:hover {
-    background-color:  #FD605D;
+    background-color:  #AB0635;
     color: white !important;
   }

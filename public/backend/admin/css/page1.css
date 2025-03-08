@@ -86,12 +86,12 @@
     white-space: nowrap !important;
     border: 1px solid #3595F6;
     outline: none;
-    color: #4D4FD1 !important;
+    color: #00315C !important;
     font-weight: 600 !important;
   }
   .add-textarea textarea::placeholder{
     font-size: 34px;
-    color: #4D4FD1 !important;
+    color: #00315C !important;
     font-weight: 600 !important;
     width: 10em !important;
     max-width: 100% !important;
@@ -117,7 +117,7 @@
     margin-top: 10px;
   }
   .card-header1 h2{
-    color: #4D4FD1;
+    color: #00315C;
     font-size: 17px;
   }
   .sigh{
@@ -306,7 +306,7 @@
     margin-top: 3px !important;
   }
   .select2-container--bootstrap5 .select2-selection--single.form-select-solid .select2-selection__rendered{
-    color: #4D4FD1 !important;
+    color: #00315C !important;
     font-weight: 400 !important;
   }
   .for-cont4{
@@ -369,7 +369,7 @@
   
   /* Gray Color/bs-gray-900 */
   
-  background: #4D4FD1;
+  background: #00315C;
   border-radius: 5.0028px;
   color: #FFFFFF;
   flex: none;
@@ -421,7 +421,7 @@
   }
   .inner-lay span{
     margin-top: 10px;
-    color: #4D4FD1;
+    color: #00315C;
     font-weight: 500;
   }
   .layout11{
@@ -1032,7 +1032,7 @@
    margin-left: -2.25rem;
 }
 .images_heading .add_image{
-  color: #4D4FD1;
+  color: #00315C;
   font-weight: 600;
   font-size: 36px;
 }
@@ -1116,7 +1116,7 @@
   font-size: 15px !important;
 }
 .stepper-item22 .stepper-title2{
-  color: #4D4FD1;
+  color: #00315C;
   font-weight: 400 !important;
   font-size: 15px !important;
 }

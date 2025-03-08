@@ -1,6 +1,6 @@
 <table class="table align-middle fs-6 gy-5">
  
-    {{-- <thead style="background-color:#4D4FD1; color: white;">
+    {{-- <thead style="background-color:#00315C; color: white;">
             <th>Name</th>
             <th>Created By</th>
             <th>Creation Date</th>
@@ -11,7 +11,7 @@
         </tr>
     </thead> --}}
 
-    <thead style="background-color:#4D4FD1; color: white; border-bottom: 2px solid #004761;">
+    <thead style="background-color:#00315C; color: white; border-bottom: 2px solid #004761;">
         <tr class="text-start fw-bold fs-7 text-uppercase gs-0" style="letter-spacing: 0.05em;">
             <th style="padding: 12px 20px;">Name</th>
             <th style="padding: 12px 20px;">Created By</th>

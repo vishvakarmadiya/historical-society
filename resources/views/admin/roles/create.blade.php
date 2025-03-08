@@ -80,8 +80,8 @@
                                             <button type="submit" class="btn btn-sm fw-bold text-white save-btn" style="background-color:rgb(236, 105,31)">Save</button>
 
                     {{--
-                                            class="btn btn-sm fw-bold text-white" style="background-color: #FD605D;"
-                                            <a href="{{ route('admin.roles.create') }}"  class="btn btn-sm fw-bold text-white" style="background-color: #FD605D;">Add New Role</a>
+                                            class="btn btn-sm fw-bold text-white" style="background-color: #AB0635;"
+                                            <a href="{{ route('admin.roles.create') }}"  class="btn btn-sm fw-bold text-white" style="background-color: #AB0635;">Add New Role</a>
                    --}}
                                         </div>
                                     </form>

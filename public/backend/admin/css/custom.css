@@ -136,14 +136,14 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #4D4FD1;
+    color: #00315C;
 }
 .um-summary .um-lists .um-value a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    color: #4D4FD1;
+    color: #00315C;
     text-decoration: underline;
 }
 
@@ -360,7 +360,7 @@
     background: #FFD3D5;
 }
 .all-activity .ls-activity .ls-status.s-red:before{
-    background: #F25961;
+    background: #AB0635;
 }
 
 .all-activity .ls-activity .left h5{
@@ -379,7 +379,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: #4D4FD1;
+    color: #00315C;
     margin: 0;
 }
 
@@ -419,7 +419,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #4D4FD1;
+    color: #00315C;
     margin: 0 0 10px 0;
 }
 
@@ -745,14 +745,14 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #4D4FD1;
+    color: #00315C;
 }
 .um-summary .um-lists .um-value a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    color: #4D4FD1;
+    color: #00315C;
     text-decoration: underline;
 }
 
@@ -969,7 +969,7 @@
     background: #FFD3D5;
 }
 .all-activity .ls-activity .ls-status.s-red:before{
-    background: #F25961;
+    background: #AB0635;
 }
 
 .all-activity .ls-activity .left h5{
@@ -988,7 +988,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: #4D4FD1;
+    color: #00315C;
     margin: 0;
 }
 
@@ -1028,7 +1028,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #4D4FD1;
+    color: #00315C;
     margin: 0 0 10px 0;
 }
 
@@ -1239,7 +1239,7 @@
     font-family: 'Inter';
     font-weight: 400 !important;
     font-size: 15px !important;
-    color: #4D4FD1 !important;
+    color: #00315C !important;
 }
 .form-cont2{
     position: relative;

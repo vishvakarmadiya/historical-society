@@ -77,7 +77,7 @@
                     </div>
                     <!--end::Menu This Week-->
                     @can('event-categories-create')
-                        <a href="{{ route('admin.events.create') }}" class="btn btn-sm fw-bold text-white" style="background-color: #FD605D">
+                        <a href="{{ route('admin.events.create') }}" class="btn btn-sm fw-bold text-white" style="background-color: #AB0635">
                             <i class="ki-duotone ki-plus-square fs-1"><span class="path3"></span></i>
                             Create New Event
                         </a>

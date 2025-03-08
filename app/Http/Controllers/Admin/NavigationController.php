@@ -43,23 +43,37 @@ class NavigationController extends Controller
 
     public function store(Request $request)
     {
-        //return $request->all();
-        $navigation = new Navigation;
+        // 🔹 Validate only required fields
+        $validatedData = $request->validate([
+            'title' => 'required',
+            'storeObjectItems' => 'required',
+            'storeObjectItems.*' => 'required', 
+            'is_active' => 'required|boolean', 
+        ], [
+            'title.required' => 'The title field is required.',
+            'storeObjectItems.required' => 'At least one item must be added.',
+            'storeObjectItems.*.required' => 'Each item must have a value.',
+            'is_active.required' => 'Please specify whether the menu is active or not.',
+        ]);
+    
+        // 🔹 Store data if validation passes
+        $navigation = new Navigation();
         $navigation->added_by = Auth::guard('admin')->user()->id;
-        $navigation->title = $request->title;
-        $navigation->background_color = $request->background_color;
-        $navigation->text_link_color = $request->text_link_color;
-        $navigation->hover_background_color = $request->hover_background_color;
-        $navigation->link_hover_color = $request->link_hover_color;
-        $navigation->parent_text_color = $request->parent_text_color;
-        $navigation->parent_text_hover_color = $request->parent_text_hover_color;
-        $navigation->items = $request->storeObjectItems;
-        $navigation->is_published = $request->is_active;
+        $navigation->title = $validatedData['title'];
+        $navigation->background_color = $request->background_color ?? null;
+        $navigation->text_link_color = $request->text_link_color ?? null;
+        $navigation->hover_background_color = $request->hover_background_color ?? null;
+        $navigation->link_hover_color = $request->link_hover_color ?? null;
+        $navigation->parent_text_color = $request->parent_text_color ?? null;
+        $navigation->parent_text_hover_color = $request->parent_text_hover_color ?? null;
+        $navigation->items = json_encode($validatedData['storeObjectItems']); // Convert array to JSON
+        $navigation->is_published = $validatedData['is_active'];
         $navigation->save();
-
+    
+        // 🔹 Redirect back with success message
         return redirect()->route('admin.navigations.index')->with('success', 'Menu Added Successfully!');
     }
-
+    
     public function edit($id)
     {
         $navigation = Navigation::find($id);

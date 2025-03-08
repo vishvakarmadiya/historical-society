@@ -31,7 +31,7 @@
     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
         <a href="{{ route('admin.dashboard') }}">
             <img alt="Logo" src="{{ asset('./logo.jpg') }}" class="yogi app-sidebar-logo-default" />
-            <img alt="Logo" src="{{ asset('./small-logo.png') }}" class="h-20px app-sidebar-logo-minimize" />
+            <img alt="Logo" src="{{ asset('./sub_logo.png') }}" class="h-20px app-sidebar-logo-minimize" />
         </a>
         <div id="kt_app_sidebar_toggle"
             class="app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary body-bg h-30px w-30px position-absolute top-50 start-100 translate-middle rotate"
@@ -222,7 +222,7 @@
                         @canany(['event-list', 'event-create', 'event-edit', 'event-delete'])
                             <div class="menu-sub menu-sub-accordion">
                                 <div
-                                    class="menu-item#AB0635 @if (in_array(Route::currentRouteName(), [
+                                    class="menu-item pro-hover @if (in_array(Route::currentRouteName(), [
                                             'admin.events.index',
                                             'admin.events.create',
                                             'admin.events.edit',

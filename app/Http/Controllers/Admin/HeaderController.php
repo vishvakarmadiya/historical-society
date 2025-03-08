@@ -42,25 +42,41 @@ class HeaderController extends Controller
 
     public function store(Request $request)
     {
+        // Validation rules
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'background_color' => 'nullable|string|max:20',
+            'background_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'text' => 'required|string',
+            'default_logo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'is_published' => 'required|in:1,0', // ENUM validation
+        ]);
+    
+        // Store data if validation passes
         $header = new Header;
         $header->added_by = Auth::guard('admin')->user()->id;
         $header->title = $request->title;
+    
         if ($request->background_color) {
             $header->background_color = $request->background_color;
         }
-        if ($request->background_image) {
+    
+        if ($request->hasFile('background_image')) {
             $header->background_image = imageUpload($request->file('background_image'), 'backend/admin/images/header');
         }
+    
         $header->text = $request->text;
-        if ($request->default_logo) {
+    
+        if ($request->hasFile('default_logo')) {
             $header->default_logo = imageUpload($request->file('default_logo'), 'backend/admin/images/header');
         }
+    
         $header->is_published = $request->is_published;
         $header->save();
-
+    
         return redirect()->route('admin.headers.index')->with('success', 'Header Added Successfully!');
     }
-
+    
     public function edit(Header $header)
     {
         return view('admin.content_management.header.edit', compact('header'), ['page_title' => 'Edit Header']);

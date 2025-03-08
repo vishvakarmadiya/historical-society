@@ -48,7 +48,18 @@ class FooterController extends Controller
 
     public function store(Request $request)
     {
-        //return $request->all();
+        // Validation rules (all required fields)
+        
+        $request->validate([
+            'title' => 'required',
+            'sub_title' => 'required',
+            'parent_text_color' => 'required',
+            'parent_text_hover_color' => 'required',
+            'footer_logo' => 'required',
+            
+        ]);
+    
+        // Store data if validation passes
         $footer = new Footer;
         $footer->added_by = Auth::guard('admin')->user()->id;
         $footer->title = $request->title;
@@ -57,15 +68,18 @@ class FooterController extends Controller
         $footer->sub_title = $request->sub_title;
         $footer->parent_text_color = $request->parent_text_color;
         $footer->parent_text_hover_color = $request->parent_text_hover_color;
-        if ($request->footer_logo) {
+    
+        if ($request->hasFile('footer_logo')) {
             $footer->footer_logo = imageUpload($request->file('footer_logo'), 'backend/admin/images/footer');
         }
+    
         $footer->items = json_encode($request->storeObjectItems);
         $footer->is_active = $request->is_active;
         $footer->save();
-
+    
         return redirect()->route('admin.footers.index')->with('success', 'Footer Added Successfully!');
     }
+    
 
     public function update(Request $request, Footer $footer)
     {

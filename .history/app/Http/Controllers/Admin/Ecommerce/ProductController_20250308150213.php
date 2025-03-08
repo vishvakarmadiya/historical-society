@@ -106,7 +106,7 @@ class ProductController extends Controller
     $product->save();
 
     // Return with appropriate success message
-    if ($request->status == '1') {
+    if ($request->status == 'active') {
         return back()->with('success', 'Product Activated');
     } else {
         return back()->with('error', 'Product Deactivated');

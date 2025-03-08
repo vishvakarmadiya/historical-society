@@ -102,7 +102,7 @@ class ProductController extends Controller
     $product = Product::findOrFail($id);
 
     // Update status
-    $product->status = $request->status;
+    $product->is_active = $request->status;
     $product->save();
 
     // Return with appropriate success message

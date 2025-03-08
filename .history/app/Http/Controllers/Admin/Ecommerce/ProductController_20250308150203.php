@@ -106,7 +106,26 @@ class ProductController extends Controller
     $product->save();
 
     // Return with appropriate success message
-    if ($request->status == '1') {
+    if ($request->status == 'public function show(Request $request, $id)
+{
+    $product = Product::findOrFail($id);
+
+    // Validate that status is either '0' or '1'
+    $request->validate([
+        'status' => 'required|in:0,1',
+    ]);
+
+    // Update status
+    $product->status = $request->status;
+    $product->save();
+
+    // Return with appropriate success message
+    return back()->with(
+        'success',
+        $request->status == '1' ? 'Product Activated' : 'Product Deactivated'
+    );
+}
+') {
         return back()->with('success', 'Product Activated');
     } else {
         return back()->with('error', 'Product Deactivated');

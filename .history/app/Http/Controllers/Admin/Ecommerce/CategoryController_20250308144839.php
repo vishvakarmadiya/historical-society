@@ -58,22 +58,21 @@ class CategoryController extends Controller
     
         return redirect()->route('admin.categories.index')->with('success', 'Category created successfully.');
     }
-    public function show(Request $request, $id)
+
+    public function show($id)
     {
         $category = Category::findOrFail($id);
-    
-        // Update status
-        $category->is_active = $request->status;
-        $category->save();
-    
-        // Return with appropriate success message
+        $event_category->is_active = $request->status;
+        $event_category->save();
         if ($request->status == '1') {
-            return back()->with('success', 'Category Activated');
+            return back()->with('success', 'Event Category Activited');
         } else {
-            return back()->with('error', 'Category Deactivated');
+            return back()->with('error', 'Event Category Deactivited');
         }
+        return redirect()->route('admin.categories.index')->with('success', 'Category updated successfully.');
+
     }
-    
+
     public function edit($id)
     {
         $category = Category::findOrFail($id);

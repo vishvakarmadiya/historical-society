@@ -60,21 +60,11 @@ class BrandController extends Controller
 }
 
 
-public function show(Request $request, $id)
-{
-    $brand = Brand::findOrFail($id);
-
-    // Update status
-    $brand->is_active = $request->status;
-    $brand->save();
-
-    // Return with appropriate success message
-    if ($request->status == '1') {
-        return back()->with('success', 'Brand Activated');
-    } else {
-        return back()->with('error', 'Brand Deactivated');
+    public function show($id)
+    {
+        $brand = Brand::findOrFail($id);
+        return view('admin.ecommerce.brands.show', compact('brand'));
     }
-}
 
     public function edit($id)
     {

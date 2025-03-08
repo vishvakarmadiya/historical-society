@@ -41,11 +41,10 @@
                         </svg>
 
                         <div class="dropdown-more-details menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4 mt-10 new-dp1 dropdown-menu"
-                            id="sey_{{$key}}" aria-labelledby="self_car_{{$key}}>
-                            <div class="menu-item px-3>
-                                <div class="dropdown-more-detatils menu menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-"
+                            id="sey_{{$key}}" aria-labelledby="self_car_{{$key}}">
+                            <div class="menu-item px-3">
                                 @can('header-edit')
-                                <a href="{{ route('admin.headers.edit', $header->id) }}" class="menu-link px-3">
+                                <a href="{{route('admin.headers.edit',$header->id)}}" class="menu-link px-3">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -65,7 +64,7 @@
                                     </svg>
                                     Delete
                                 </a>
-                                <form action="{{ route('admin.headers.destroy', $header->id) }}"
+                                <form action="{{route('admin.headers.destroy',$header->id)}}"
                                     id="delete_form_{{$header->id}}" method="POST">
                                     @method('DELETE')
                                     @csrf

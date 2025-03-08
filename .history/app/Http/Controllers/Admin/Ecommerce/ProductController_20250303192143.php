@@ -97,22 +97,11 @@ class ProductController extends Controller
     /**
      * Display the specified product.
      */
-    public function show(Request $request, $id)
-{
-    $product = Product::findOrFail($id);
-
-    // Update status
-    $product->status = $request->status;
-    $product->save();
-
-    // Return with appropriate success message
-    if ($request->status == '1') {
-        return back()->with('success', 'Product Activated');
-    } else {
-        return back()->with('error', 'Product Deactivated');
+    public function show($id)
+    {
+        $product = Product::findOrFail($id);
+        return view('admin.ecommerce.products.show', compact('product'));
     }
-}
-
 
     /**
      * Show the form for editing the specified product.

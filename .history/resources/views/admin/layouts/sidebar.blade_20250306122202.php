@@ -222,7 +222,7 @@
                         @canany(['event-list', 'event-create', 'event-edit', 'event-delete'])
                             <div class="menu-sub menu-sub-accordion">
                                 <div
-                                    class="menu-item#AB0635 @if (in_array(Route::currentRouteName(), [
+                                    class="menu-item pro-hover @if (in_array(Route::currentRouteName(), [
                                             'admin.events.index',
                                             'admin.events.create',
                                             'admin.events.edit',

@@ -4,9 +4,9 @@
 <head>
     <title>
         @isset($page_title)
-            {{ $page_title }}
+        {{ $page_title }}
         @else
-            {{ env('APP_NAME') }}
+        {{ env('APP_NAME') }}
         @endisset
     </title>
     <meta charset="utf-8" />
@@ -25,11 +25,12 @@
     <link href="{{ asset('backend/admin/css/asit.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('backend/admin/css/pages.css') }}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ asset('backend/admin/css/summernote-bs4.min.css') }}">
-    <script src="https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.min.css"></script>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.3/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.2/css/buttons.bootstrap5.min.css">
+    <!-- Summernote CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-lite.min.css" rel="stylesheet">
 
-   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.3/css/dataTables.bootstrap5.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote.min.css" integrity="sha256-wxPsSfYElt0HPUyAf/IPv/i+pgccSji0HHoc17DAhVE=" crossorigin="anonymous">
-    
 </head>
 
 <body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true"
@@ -51,9 +52,9 @@
 
                     <div id="kt_app_footer" class="app-footer">
                         <div
-                        
-                        {{-- Copyright and it's Date --}}
-                         class="app-container container-fluid d-flex justify-content-center flex-column flex-md-row flex-center flex-md-stack py-3">
+
+                            {{-- Copyright and it's Date --}}
+                            class="app-container container-fluid d-flex justify-content-center flex-column flex-md-row flex-center flex-md-stack py-3">
                             <div class="text-dark order-2 order-md-1">
                                 <span class="text-muted fw-semibold me-1">Copyright - &copy; {{date('Y')}} </span>
                                 <a href="javascript:void(0);" class="text-gray-800 cursor-default"><b>HISTORICAL SOCIETY<b></a>
@@ -77,23 +78,30 @@
     <script src="{{ asset('backend/admin/js/vis-timeline.bundle.js') }}"></script>
     <script src="{{ asset('backend/admin/js/save-product.js') }}"></script>
     <script src="{{ asset('backend/admin/js/formrepeater.bundle.js') }}"></script>
-    <script src="{{ asset('backend/admin/js/summernote-bs4.min.js') }}"></script>
 
-    <script>
-        $(function() {
-            // Summernote
-            $('#summernote').summernote()
-        })
-    </script>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Bootstrap Bundle (JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables JS -->
     <script src="https://cdn.datatables.net/2.1.3/js/dataTables.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-   
-   <script>
-            
-        $(document).ready(function(){
-            $('#myDataTable').DataTable();
-        })
-    </script>
+    <script src="https://cdn.datatables.net/2.1.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- DataTables Export Buttons -->
+    <script src="https://cdn.datatables.net/buttons/3.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.2/js/buttons.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.2/js/buttons.print.min.js"></script>
+
+    <!-- Dependencies for PDF & Excel Export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-lite.min.js"></script>
 </body>
 
 </html>

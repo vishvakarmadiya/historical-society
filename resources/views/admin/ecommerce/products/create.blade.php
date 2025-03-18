@@ -108,7 +108,7 @@
 
                         <div class="mb-3">
                             <label for="product_detail" class="form-label ">Product Detail</label>
-                            <textarea name="product_detail" id="product_detail" class="form-control summernote" rows="4"></textarea>
+                            <textarea name="product_detail" id="product_detail "  class="form-control summernote" rows="4"></textarea>
                         </div>
 
                         <div class="mb-3">

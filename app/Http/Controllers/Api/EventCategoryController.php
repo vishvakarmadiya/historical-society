@@ -9,8 +9,7 @@ use App\Http\Controllers\Controller;
 
 class EventCategoryController extends Controller
 {
-
-    public function getEventCategory()
+       public function getEventCategory()
     {
         $categories = EventCategory::select('id', 'name', 'slug', 'image', 'seo_title', 'seo_description')->where('is_active', '1')->where('is_delete', '0')->get();
 

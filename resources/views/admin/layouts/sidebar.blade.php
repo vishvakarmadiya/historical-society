@@ -629,23 +629,7 @@
                     </div>
                 @endcanany
 
-                 {{-- @canany(['staff-list', 'staff-create', 'staff-edit', 'staff-status-change', 'staff-delete'])
-                    <div class="menu-item pro-hover @if (in_array(Route::currentRouteName(), ['admin.staff.index', 'admin.staff.create', 'admin.staff.edit'])) {{ 'is-active' }} @endif">
-                        <a class="menu-link" href="{{ route('admin.staff.index') }}">
-                            <span class="menu-icon">
-                                <i class="ki-duotone ki-user fs-2">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                    <span class="path3"></span>
-                                    <span class="path4"></span>
-                                    <span class="path5"></span>
-                                    <span class="path6"></span>
-                                </i>
-                            </span>
-                            <span class="menu-title">Staff Management</span>
-                        </a>
-                    </div>
-                @endcanany --}}
+                
                 @canany(['role-list', 'role-create', 'role-edit', 'role-delete'])
                     <div class="menu-item pro-hover @if (in_array(Route::currentRouteName(), ['admin.roles.index', 'admin.roles.create', 'admin.roles.edit'])) {{ 'is-active' }} @endif">
                         <a class="menu-link" href="{{ route('admin.roles.index') }}">

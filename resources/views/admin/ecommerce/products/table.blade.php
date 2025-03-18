@@ -1,4 +1,4 @@
-<table class="table align-middle table-row-dashed fs-6 gy-5">
+<table class="table align-middle table-row-dashed fs-6 gy-5" id="myDataTable">
     <thead>
         <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0 data_tables">
             <th class="w-10px pe-2">SN.</th>

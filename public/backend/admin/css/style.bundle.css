@@ -38269,6 +38269,8 @@ code:not([class*="language-"]) {
   border-color: var(--bs-gray-100);
   color: var(--bs-gray-700);
   transition: color 0.2s ease;
+  display: none;
+  
 }
 .form-control.form-control-solid::placeholder {
   color: var(--bs-gray-500);
